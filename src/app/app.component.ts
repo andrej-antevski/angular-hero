@@ -1,3 +1,4 @@
+import { Hero } from './Hero';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hero-app';
+  herop:Hero;
+
+  selectedHero(h:Hero){
+    this.herop = h;
+  }
 }
